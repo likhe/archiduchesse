@@ -1,0 +1,118 @@
+/*************reset******************/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+* a {
+  color: gray;
+}
+/**********header**************************/
+#top {
+  width: 100vw;
+  background-image: url("img/bgd/bg.png");
+}
+.container {
+  padding: 2em;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.toplink {
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+span {
+max-width: 50%
+}
+
+span {
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.shop {
+  background: transparent url("img/bgd/ticket-bas.png") no-repeat center bottom;
+  top:0;
+  margin-top: 2em;
+}
+
+.shop a {
+  top:0;
+  vertical-align: middle;
+  background-image: url("img/bgd/ticket-repeat.png");
+  padding: 2em;
+  text-align: center;
+  margin-top: 0;
+}
+
+/***********nav inside the header**********************/
+nav {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav .item {
+  background-color: rgba(0,0,0,0.1);
+  bottom: 1px solid black;
+  border-radius: 10%;
+}
+i {
+  display: inline;
+}
+nav span img {
+  width: 48px;
+  height: 48px;
+}
+/***********************wrapper*********************************/
+.wrapper {
+  width: 1200px;
+  height: 100%;
+
+}
+/********************content*********************************************/
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/********************************main*******************************/
+
+main {
+    width: 75%;
+    float: left;
+    padding-right: 5em;
+}
+
+/******************aside************************************************/
+.right {
+  float: right;
+  width: 25%;
+}
+/*****************inside aside***********************************************/
+.title,
+.subtitle,
+.cat-item,
+.footage,
+.foot-item {
+  margin-left: .1em;
+  padding: .2em;
+}
+/********************text content****************************/
+[class*= "-item"] {
+    line-height: 1.5em;
+}
