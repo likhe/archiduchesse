@@ -20,6 +20,7 @@ body {
 }
 .container {
   padding: 2em;
+  padding-bottom: 0;
 }
 .row {
   display: flex;
@@ -63,56 +64,51 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border: 1px solid black;
+  padding-bottom: -1.5em;
 }
 
 nav .item {
   background-color: rgba(0,0,0,0.1);
   bottom: 1px solid black;
   border-radius: 10%;
+  width: calc(100%/6);
 }
-i {
-  display: inline;
+.item {
+  padding-bottom: -0.3em;
 }
-nav span img {
-  width: 48px;
-  height: 48px;
-}
-/***********************wrapper*********************************/
-.wrapper {
-  width: 1200px;
-  height: 100%;
+.nav-item {
 
 }
-/********************content*********************************************/
-.content {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.nav-item img {
+  width: 64px;
+  height: 100%;
+  float: left;
+  margin-right: 5px;
 }
+.sock {
+  top: 0;
+  left: 0;
+  transform: translateY(-5px);
+}
+/*************hover the socks****************/
+.sock:hover {
+  transform: translateY(-10px);
+}
+/*****************the text*********************/
+.nav-city span strong {
+  display: inline-block;
+}
+span {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+
 /********************************main*******************************/
 
 main {
     width: 75%;
     float: left;
     padding-right: 5em;
-}
-
-/******************aside************************************************/
-.right {
-  float: right;
-  width: 25%;
-}
-/*****************inside aside***********************************************/
-.title,
-.subtitle,
-.cat-item,
-.footage,
-.foot-item {
-  margin-left: .1em;
-  padding: .2em;
-}
-/********************text content****************************/
-[class*= "-item"] {
-    line-height: 1.5em;
 }
