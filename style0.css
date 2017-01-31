@@ -1,22 +1,142 @@
 body {
-  margin: 0;
+    margin: 0;
 }
-.container {
-  width: 1600px;
-  height: 100vh;
-}
-header {
-  width: 1600px;
-  height: 15%;
-  background-color: green;
-}
-main {
-  height: 60%;
-  background-color: blue;
 
+a {
+    text-decoration: none;
+    color: #d5d5d5;
 }
+
+.container {
+    width: 1600px;
+}
+
+header {
+    width: 1600px;
+    background-image: url("img/bgd/bg.png");
+}
+
+.container-header {
+    width: 1160px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.logo, .toplink, .top-right {
+  width: 33.3333333%;
+}
+.title {
+  width: 80%;
+}
+.toplink {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.top-item {
+    padding: 20px;
+}
+
+.top-item a {
+    font-size: 14px;
+}
+/*********the ticket*********************/
+
+.top-right {
+    align-items: flex-end;
+    background-image: url('img/bgd/ticket-repeat.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 9em;
+    display: flex;
+    margin-left: 14em;
+    flex-direction: column;
+    text-align: center;
+}
+.torn {
+  margin-top: 3.6em;
+  width: inherit;
+}
+
+/***********nav inside the header**********************/
+
+.menu-socks {
+    margin-top: 4em;
+}
+
+.menu-socks .item {
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 1px solid black;
+    border-radius: 10%;
+    width: calc(100%/6);
+}
+.menu-socks .item {
+  margin-right: 1em;
+}
+.nav-item img {
+    width: 64px;
+    height: 100%;
+    float: left;
+    margin-right: 8px;
+}
+
+.sock {
+    top: 0;
+    left: 0;
+    transform: translateY(-5px);
+}
+
+
+/*************hover the socks****************/
+
+.sock:hover {
+    transition: all .7s linear;
+    transform: translateY(-10px);
+}
+
+
+/*****************the text*********************/
+
+.nav-city span strong {
+    display: inline-block;
+}
+
+.nav-sub {
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+
+main {
+    height: 60%;
+    background-color: blue;
+}
+
 footer {
-  width: 1600px;
-  height: 25%;
-  background-color: yellow;
+    width: 1600px;
+    height: 25%;
+    background-color: yellow;
+}
+
+
+/*********media query************/
+
+@media (max-width:992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 740px;
+        color: green;
+    }
+    .top-right {
+      display: none;
+    }
 }
