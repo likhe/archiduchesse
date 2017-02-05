@@ -173,6 +173,10 @@ main {
     align-self: center;
 }
 
+.price {
+    background-image: url("img/bgd/bg.png");
+}
+
 
 /*********footer**********************/
 
