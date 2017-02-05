@@ -1,5 +1,12 @@
 body {
     margin: 0;
+    padding: 0;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 a {
@@ -13,6 +20,7 @@ a {
 
 header {
     width: 1600px;
+    height: 100%;
     background-image: url("img/bgd/bg.png");
 }
 
@@ -56,55 +64,67 @@ header {
     background-image: url('img/bgd/ticket-repeat.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 9em;
+    height: 6em;
+    width: 19em;
     display: flex;
-    margin-left: 14em;
     flex-direction: column;
     text-align: center;
 }
 
 .torn {
-    margin-top: 3.6em;
+    margin-top: 0.7em;
     width: inherit;
+    z-index: -1;
+    padding-left: 1em;
 }
 
 
 /***********nav inside the header**********************/
 
-.menu-socks {
-    margin-top: 4em;
-    flex-grow: 3;
+.container-header, .menu-socks {
+    width: 1160px;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
 }
 
-.menu-socks .item {
-    background-color: rgba(0, 0, 0, 0.1);
-    bottom: 1px solid black;
-    border-radius: 10%;
-    width: calc(100%/6);
+.container-header:last-child {
+    padding-top: 2em;
 }
 
-.menu-socks .item {
-    margin-right: 1em;
-    border: 1px dashed red;
+.menu-socks, .nav-item {
+    padding: .22em;
+    margin-right: .4em;
+    padding-bottom: 0;
 }
 
 .nav-item {
-  border-radius: 5px 5px 0 0;
-    padding-right: 3em;
-    border: 1px double blue;
+    border-radius: 5px 5px 0 0;
     background-color: gray;
-    opacity: 0.5;
+    opacity: 0.3;
+}
+
+.menu-socks .item {
+    margin-top: 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 1px solid black;
+    border-radius: 10%;
+    margin-right: 1em;
+}
+
+.item {
+    margin-right: 0.3em;
+}
+
+.nav-item {
+    display: inline-block;
 }
 
 .nav-item img {
     width: 64px;
-    height: 100%;
+    height: 64px;
     float: left;
     margin-right: 8px;
-}
-
-.sock {
-    border: 1px dotted green;
 }
 
 
@@ -122,19 +142,36 @@ header {
     display: inline-block;
 }
 
+strong {
+    font-size: 1.42em;
+    line-height: 1.2em;
+}
+
 .nav-sub {
     font-size: 11px;
     white-space: nowrap;
 }
 
-main {
-    height: 60%;
-    background-color: blue;
+strong, .nav-sub:hover {
+    color: black;
 }
+
+
+/******main************/
+
+main {
+    width: 1600px;
+    height: 3814px;
+    background-color: blue;
+    display: flex;
+}
+
+
+/*********footer**********************/
 
 footer {
     width: 1600px;
-    height: 25%;
+    height: 278px;
     background-color: yellow;
 }
 
