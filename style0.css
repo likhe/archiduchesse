@@ -164,6 +164,13 @@ main {
     height: 3814px;
     background-color: blue;
     display: flex;
+    justify-content: center;
+}
+
+.container-articles {
+    width: 1160px;
+    height: 3753px;
+    align-self: center;
 }
 
 
