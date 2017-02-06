@@ -28,7 +28,6 @@ header {
     width: 1160px;
     margin: 0 auto;
     padding-left: 10px;
-    padding-right: 10px;
     display: flex;
     flex-direction: row;
 }
@@ -37,45 +36,99 @@ header {
     width: 33.3333333%;
 }
 
-.title {
-    width: 80%;
+.logo, .toplink {
+    width: 33.3333333%;
 }
+
+
+/****the logo**********************/
+
+.logo, .logo-title {
+    /*background: url('img/logo.svg') no-repeat 0 30%;*/
+    width: 300px;
+}
+
+.logo {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.logo-tile {
+    height: 50%;
+}
+
+
+/*******top menu*********************/
 
 .toplink {
-    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    padding-top: 50px;
+    padding-left: 8em;
 }
-
-.top-item {
-    padding: 20px;
+.top-item a:hover {
+    background-color: white;
+    border-radius: 5px 5px 5px 0;
 }
 
 .top-item a {
-    font-size: 14px;
+    padding: 5px 14px;
+    font-size: 18px;
+    color: #000;
 }
 
 
 /*********the ticket*********************/
 
 .top-right {
-    align-items: flex-end;
     background-image: url('img/bgd/ticket-repeat.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 6em;
-    width: 19em;
-    display: flex;
-    flex-direction: column;
+    height: 5em;
+    width: 27em;
+    margin-left: 10em;
     text-align: center;
+    z-index: 0;
+}
+
+.country, option {
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 2px 4px 3px 4px;
+    background-color: red;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #ffe5e3;
+    background-color: #c47b81;
+    font-size: 10px;
+}
+
+option {
+    background-color: #ffe5e3;
+}
+
+.country {
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.content-ticket {
+    margin-top: 10px;
+}
+
+.content-ticket, p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .torn {
-    margin-top: 0.7em;
+    margin-top: 1.1em;
     width: inherit;
     z-index: -1;
-    padding-left: 1em;
 }
 
 
@@ -89,19 +142,25 @@ header {
 }
 
 .container-header:last-child {
-    padding-top: 2em;
+    padding-top: 1em;
+    margin-bottom: -0.7em;
 }
 
 .menu-socks, .nav-item {
-    padding: .22em;
-    margin-right: .4em;
-    padding-bottom: 0;
+    padding: .4em;
+    margin-right: .45em;
+    padding-right: 1.34em;
 }
 
 .nav-item {
     border-radius: 5px 5px 0 0;
-    background-color: gray;
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #a2a2a2;
+}
+
+strong {
+    color: #a2a2a2 !important;
+    font-style: italic;
 }
 
 .menu-socks .item {
@@ -121,8 +180,7 @@ header {
 }
 
 .nav-item img {
-    width: 64px;
-    height: 64px;
+    width: 58px;
     float: left;
     margin-right: 8px;
 }
@@ -171,10 +229,28 @@ main {
     width: 1160px;
     height: 3753px;
     align-self: center;
+    background-color: yellow;
 }
 
 .price {
     background-image: url("img/bgd/bg.png");
+}
+
+
+/*********the list of size under the img*****************/
+
+.size-socks {
+    text-align: center;
+    background-color: red;
+}
+
+size-socks ul li a {
+    background-color: green;
+    display: inline-block;
+}
+
+.lign {
+    border: 1px solid black;
 }
 
 
