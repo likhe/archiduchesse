@@ -246,7 +246,6 @@ main {
     margin-top: -1.9em;
     background: url('img/bgd/bg2.png') no-repeat 0 40%;
 }
-
 .container-articles {
     width: 1140px;
     height: 3753px;
@@ -256,10 +255,16 @@ main {
 
 .price {
     background-image: url("img/bgd/bg.png");
+    padding: 5px 10px;
+    margin-left: 10.3em;
 }
 
 
 /*********the list of size under the img*****************/
+
+h1 {
+  margin-bottom: 0;
+}
 
 .size-socks {
     text-align: center;
