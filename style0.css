@@ -22,6 +22,7 @@ header {
     width: 1600px;
     height: 100%;
     background-image: url("img/bgd/bg.png");
+    z-index: -1;
 }
 
 .container-header {
@@ -84,7 +85,7 @@ header {
     background-image: url('img/bgd/ticket-repeat.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 5em;
+    height: 6em;
     width: 27em;
     margin-left: 10em;
     text-align: center;
@@ -94,18 +95,20 @@ header {
 .country, option {
     float: left;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 1.6em;
     padding: 2px 4px 3px 4px;
     background-color: red;
     text-transform: uppercase;
-    line-height: 1;
     color: #ffe5e3;
     background-color: #c47b81;
+    width: 50px;
+    height: 20px;
     font-size: 10px;
 }
 
 option {
-    background-color: #ffe5e3;
+    opacity: 0.5;
+    transition: all 0.3s;
 }
 
 .country {
@@ -118,15 +121,33 @@ option {
 
 .content-ticket {
     margin-top: 10px;
+    background: url('img/bgd/stabilo.png') no-repeat 45% 0 ;
 }
 
-.content-ticket, p {
-    margin-top: 0;
-    margin-bottom: 0;
+.content-ticket, .buy {
+    color: #c47b81;
 }
-
+.buy {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.free-order {
+  color: #000;
+}
+.number {
+  float: left;
+  margin-top: -10px;
+  margin-left: 1em;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #c47b81;
+}
+.paper {
+  text-decoration: underline;
+  color:inherit;
+}
 .torn {
-    margin-top: 1.1em;
+    margin-top: 0.2em;
     width: inherit;
     z-index: -1;
 }
@@ -220,13 +241,14 @@ strong, .nav-sub:hover {
 main {
     width: 1600px;
     height: 3814px;
-    background-color: blue;
     display: flex;
     justify-content: center;
+    margin-top: -1.9em;
+    background: url('img/bgd/bg2.png') no-repeat 0 40%;
 }
 
 .container-articles {
-    width: 1160px;
+    width: 1140px;
     height: 3753px;
     align-self: center;
     background-color: yellow;
