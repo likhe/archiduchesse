@@ -67,6 +67,7 @@ header {
     padding-top: 50px;
     padding-left: 8em;
 }
+
 .top-item a:hover {
     background-color: white;
     border-radius: 5px 5px 5px 0;
@@ -121,31 +122,36 @@ option {
 
 .content-ticket {
     margin-top: 10px;
-    background: url('img/bgd/stabilo.png') no-repeat 45% 0 ;
+    background: url('img/bgd/stabilo.png') no-repeat 45% 0;
 }
 
 .content-ticket, .buy {
     color: #c47b81;
 }
+
 .buy {
-  margin-top: 0;
-  margin-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
+
 .free-order {
-  color: #000;
+    color: #000;
 }
+
 .number {
-  float: left;
-  margin-top: -10px;
-  margin-left: 1em;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #c47b81;
+    float: left;
+    margin-top: -10px;
+    margin-left: 1em;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #c47b81;
 }
+
 .paper {
-  text-decoration: underline;
-  color:inherit;
+    text-decoration: underline;
+    color: inherit;
 }
+
 .torn {
     margin-top: 0.2em;
     width: inherit;
@@ -246,11 +252,12 @@ main {
     margin-top: -1.9em;
     background: url('img/bgd/bg2.png') no-repeat 0 40%;
 }
+
 .container-articles {
     width: 1140px;
     height: 3753px;
     align-self: center;
-    background-color: yellow;
+    background-color: red;
 }
 
 .price {
@@ -259,11 +266,15 @@ main {
     margin-left: 10.3em;
 }
 
+.product-socks {
+    padding: 20px 0;
+}
+
 
 /*********the list of size under the img*****************/
 
 h1 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .size-socks {
@@ -271,13 +282,35 @@ h1 {
     background-color: red;
 }
 
-size-socks ul li a {
+.all-size {
+    padding: 0;
+}
+
+.size-socks, .all-size, .size {
     background-color: green;
     display: inline-block;
 }
 
+.top {
+    display: inline-block;
+    float: left;
+    background-color: blue;
+}
+.clearfix {
+  clear: both;
+}
+.bottom {
+    border-top: solid black 1px;
+    display: inline-block;
+    clear: left;
+    float: left;
+    background-color: orange;
+}
+
 .lign {
     border: 1px solid black;
+    transform: rotate(90deg);
+    transform: -webkit-rotate(90deg);
 }
 
 
