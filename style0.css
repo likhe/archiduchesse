@@ -272,14 +272,17 @@ main {
     padding-top: 0;
     padding-left: 0;
 }
-.col-pub + .pub {
-  padding: 0;
+
+.col-pub+.pub {
+    padding: 0;
 }
-.pub{
-  max-width: 98%;
-  display: inline;
-  margin: 0;
+
+.pub {
+    max-width: 98%;
+    display: inline;
+    margin: 0;
 }
+
 .price {
     background-image: url("img/bgd/bg.png");
     color: #a3a3a3;
@@ -374,18 +377,37 @@ h1 {
 
 
 /*********footer**********************/
+
 #footer-page {
-  width: 1600px;
-  height: 278px;
-  position: absolute;
-  top:5000px;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
+    width: 1600px;
+    height: 278px;
+    position: absolute;
+    top: 5000px;
+    padding: 1rem;
+    background: url("img/bgd/bg.png");
+    text-align: center;
 }
+
 .footer-container {
-  background-color: red;
+    width: 1160px;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
 }
+
+
+/***********inside the footer***************/
+
+[class^="foot-"] {
+    align-items: center;
+    padding: 25px auto 0;
+    width: calc(100%/3);
+    height: 50%;
+    background-color: yellow;
+}
+
 
 /*********media query************/
 
