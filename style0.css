@@ -257,6 +257,7 @@ main {
     width: 1140px;
     height: 3753px;
     align-self: center;
+    background-color: white;
 }
 
 .row {
@@ -271,11 +272,23 @@ main {
     padding-top: 0;
     padding-left: 0;
 }
-
+.col-pub + .pub {
+  padding: 0;
+}
+.pub{
+  max-width: 98%;
+  display: inline;
+  margin: 0;
+}
 .price {
     background-image: url("img/bgd/bg.png");
+    color: #a3a3a3;
+    margin-left: 15em;
+    white-space: nowrap;
     padding: 5px 10px;
-    margin-left: 10.3em;
+    min-width: 64px;
+    border-radius: 2px;
+    font-size: 12px;
 }
 
 .product-socks {
@@ -292,8 +305,8 @@ main {
 }
 
 #supersizeme .supersizeme-cell {
-    color: #FFF;
-    background: #4A4A4C;
+    color: #4A4A4C;
+    background: url("img/bgd/bg.png");
     text-decoration: none;
 }
 
@@ -361,13 +374,18 @@ h1 {
 
 
 /*********footer**********************/
-
-footer {
-    width: 1600px;
-    height: 278px;
-    background-color: yellow;
+#footer-page {
+  width: 1600px;
+  height: 278px;
+  position: absolute;
+  top:5000px;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
-
+.footer-container {
+  background-color: red;
+}
 
 /*********media query************/
 
