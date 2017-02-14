@@ -383,8 +383,9 @@ h1 {
     height: 278px;
     position: absolute;
     top: 5000px;
-    padding: 1rem;
+    padding: 2em;
     background: url("img/bgd/bg.png");
+    background-size: contain;
     text-align: center;
 }
 
@@ -405,7 +406,6 @@ h1 {
 
 [class^="foot-"] {
     align-items: center;
-    padding: 15px;
     width: calc(1000px/3);
     height: 75%;
     margin-bottom: 2em;
