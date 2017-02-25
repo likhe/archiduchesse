@@ -349,12 +349,14 @@ h1 {
 
 .size {
     padding: 5px;
+    border-radius: 10px;
 }
 
 .top {
     display: inline-block;
     float: left;
     background-color: blue;
+    padding: 1px;
 }
 
 .clearfix {
@@ -367,6 +369,7 @@ h1 {
     clear: left;
     float: left;
     background-color: orange;
+    padding: 1px;
 }
 
 .lign {
@@ -419,13 +422,13 @@ h1 {
     background-size: 100px;
     width: 100px;
     height: 100px;
-    margin-top: -1.5em;
+    margin-top: -5em;
 }
 
 .foot-first>p {
     text-align: left;
     display: inline;
-    margin-left: 114.5px;
+    line-height: 1.5em;
 }
 
 
