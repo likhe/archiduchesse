@@ -410,9 +410,22 @@ h1 {
     height: 75%;
     margin-bottom: 2em;
     margin-right: 3em;
-    background-color: yellow;
     border: 1px solid gray;
     border-radius: 5px;
+}
+
+.footer-nav-img {
+    background: url(img/footer/picto_fabrication.png) no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    margin-top: -1.5em;
+}
+
+.foot-first>p {
+    text-align: left;
+    display: inline;
+    margin-left: 114.5px;
 }
 
 
@@ -427,9 +440,15 @@ h1 {
 @media (max-width:768px) {
     .container {
         width: 740px;
-        color: green;
     }
+    body {
+      color: green;
+    }
+
     .top-right {
+        display: none;
+    }
+    #supersizeme {
         display: none;
     }
 }
