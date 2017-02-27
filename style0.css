@@ -416,22 +416,56 @@ h1 {
     border: 1px solid gray;
     border-radius: 5px;
 }
-
-.footer-nav-img {
-    background: url(img/footer/picto_fabrication.png) no-repeat;
-    background-size: 100px;
-    width: 100px;
-    height: 100px;
-    margin-top: -5em;
-}
-
 .foot-first>p {
     text-align: left;
     display: inline;
     line-height: 1.5em;
 }
 
+.first-nav-img {
+    background: url('img/footer/picto_fabrication.png') no-repeat;
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    margin-top: -5em;
+}
 
+.second-nav-img {
+  background: url('img/footer/picto_paypal.png') no-repeat;
+  background-size: 100px;
+  width: 100px;
+  height: 50px;
+  margin-top: -5em;
+}
+.third-nav-img {
+  background: url('img/footer/picto_livraison.png') no-repeat;
+  background-size: 100px;
+  width: 100px;
+  height: 50px;
+  margin-top: -5em;
+}
+.forth-nav-img {
+  background: url('img/footer/picto_adresse.png') no-repeat;
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
+  margin-top:-8em;
+}
+.fifth-nav-img {
+  background: url('img/footer/picto_facebook.png') no-repeat;
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
+  margin-top:-6em;
+}
+
+.sixth-nav-img {
+  background: url('img/footer/picto_twitter.png') no-repeat;
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
+  margin-top:-6em;
+}
 /*********media query************/
 
 @media (max-width:992px) {
